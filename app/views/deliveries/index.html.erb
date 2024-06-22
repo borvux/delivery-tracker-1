@@ -51,7 +51,7 @@
 
 <hr>
 
-<div style="background-color: lightgoldenrodyellow">
+<div class="waiting_on">
   <h2>Waiting On</h2>
 
   <ul>
@@ -63,7 +63,7 @@
           </div>
 
           <% if delivery.supposed_to_arrive_on < Time.now %>
-            <div style="color:red">
+            <div class="late">
               Supposed to arrive on <%= delivery.supposed_to_arrive_on %>
             </div>
           <% else %>
@@ -87,7 +87,7 @@
 
 <hr>
 
-<div style="background-color: lightgreen">
+<div class="received">
   <h2>Received</h2>
   <ul>
     <% @list_of_deliveries.each do |delivery| %>
