@@ -24,4 +24,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "deliveries#index"
+
+  # testing out the pull requset for this project 
 end
